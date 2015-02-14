@@ -205,22 +205,26 @@ public class GuiScreenIconMaker extends GuiScreen
             final float BUTTON_SIZE = 30;
             boolean alpha = mouseY > getHeight() && mouseY < getHeight() + BUTTON_SIZE && mouseX > 0 && mouseX < BUTTON_SIZE;
 
-            helper.drawButtonThingy(BUTTON_SIZE, alpha, LiteModHelper.coreHelper.getIcon("plus"));
+//            helper.drawButtonThingy(new Quad(0, 0, BUTTON_SIZE, BUTTON_SIZE), alpha, LiteModHelper.coreHelper.getIcon("plus"));
+            helper.drawIcon(LiteModHelper.coreHelper.getIcon("plus"), new Quad(0, 0, BUTTON_SIZE, BUTTON_SIZE));
 
             GL11.glTranslatef(BUTTON_SIZE + 2, 0, 0);
             alpha = mouseY > getHeight() && mouseY < getHeight() + BUTTON_SIZE && mouseX > BUTTON_SIZE + 2 && mouseX < BUTTON_SIZE * 2 + 2;
 
-            helper.drawButtonThingy(BUTTON_SIZE, alpha, LiteModHelper.coreHelper.getIcon("bin"));
+//            helper.drawButtonThingy(BUTTON_SIZE, alpha, LiteModHelper.coreHelper.getIcon("bin"));
+            helper.drawIcon(LiteModHelper.coreHelper.getIcon("bin"), new Quad(0, 0, BUTTON_SIZE, BUTTON_SIZE));
 
             GL11.glTranslatef(BUTTON_SIZE + 2, 0, 0);
-            alpha = mouseY > getHeight() && mouseY < getHeight() + BUTTON_SIZE && mouseX > BUTTON_SIZE * 2 + 2 && mouseX < BUTTON_SIZE * 3 + 2;// TODO: Name quads "Quad #n" when creating new
+            alpha = mouseY > getHeight() && mouseY < getHeight() + BUTTON_SIZE && mouseX > BUTTON_SIZE * 2 + 2 && mouseX < BUTTON_SIZE * 3 + 2;
 
-            helper.drawButtonThingy(BUTTON_SIZE, alpha, LiteModHelper.coreHelper.getIcon("copy"));// TODO: Select quad after creating a new one
+//            helper.drawButtonThingy(BUTTON_SIZE, alpha, LiteModHelper.coreHelper.getIcon("copy"));
+            helper.drawIcon(LiteModHelper.coreHelper.getIcon("copy"), new Quad(0, 0, BUTTON_SIZE, BUTTON_SIZE));
 
             GL11.glTranslatef(BUTTON_SIZE + 2, 0, 0);
             alpha = mouseY > getHeight() && mouseY < getHeight() + BUTTON_SIZE && mouseX > BUTTON_SIZE * 3 + 2 && mouseX < BUTTON_SIZE * 4 + 2;
 
-            helper.drawButtonThingy(BUTTON_SIZE, alpha, LiteModHelper.coreHelper.getIcon("paste"));
+//            helper.drawButtonThingy(BUTTON_SIZE, alpha, LiteModHelper.coreHelper.getIcon("paste"));
+            helper.drawIcon(LiteModHelper.coreHelper.getIcon("paste"), new Quad(0, 0, BUTTON_SIZE, BUTTON_SIZE));
 
             GL11.glPopMatrix();
         }

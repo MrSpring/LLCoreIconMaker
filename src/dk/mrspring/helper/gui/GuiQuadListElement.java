@@ -63,16 +63,16 @@ public class GuiQuadListElement
                 Vector[] vectors = editor.getVectors();
 
                 String vectorString = "1: " + format.format(vectors[0].getX()) + ", " + format.format(vectors[0].getY());
-                helper.drawText(vectorString, new Vector(maxWidth / 4, 17);
+                helper.drawText(vectorString, new Vector(maxWidth / 4, 17), 0xFFFFFF, true, -1, DrawingHelper.VerticalTextAlignment.CENTER, DrawingHelper.HorizontalTextAlignment.TOP);
 
                 vectorString = "2: " + format.format(vectors[1].getX()) + ", " + format.format(vectors[1].getY());
-                helper.drawCenteredText(vectorString, maxWidth / 4 * 3, 17);
+                helper.drawText(vectorString, new Vector(maxWidth / 4 * 3, 17), 0xFFFFFF, true, -1, DrawingHelper.VerticalTextAlignment.CENTER, DrawingHelper.HorizontalTextAlignment.TOP);
 
                 vectorString = "4: " + format.format(vectors[3].getX()) + ", " + format.format(vectors[3].getY());
-                helper.drawCenteredText(vectorString, maxWidth / 4, 27);
+                helper.drawText(vectorString, new Vector(maxWidth / 4, 27), 0xFFFFFF, true, -1, DrawingHelper.VerticalTextAlignment.CENTER, DrawingHelper.HorizontalTextAlignment.TOP);
 
                 vectorString = "3: " + format.format(vectors[2].getX()) + ", " + format.format(vectors[2].getY());
-                helper.drawCenteredText(vectorString, maxWidth / 4 * 3, 27);
+                helper.drawText(vectorString, new Vector(maxWidth / 4 * 3, 27), 0xFFFFFF, true, -1, DrawingHelper.VerticalTextAlignment.CENTER, DrawingHelper.HorizontalTextAlignment.TOP);
             }
         }
 
