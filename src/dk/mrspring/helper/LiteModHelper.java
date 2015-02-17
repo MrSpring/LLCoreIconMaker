@@ -54,6 +54,6 @@ public class LiteModHelper implements Tickable
     @Override
     public String getName()
     {
-        return "MrSprings Mod Maker Helper Thingy";
+        return "LLCore Icon Maker";
     }
 }
