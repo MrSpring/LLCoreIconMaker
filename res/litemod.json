@@ -1,0 +1,8 @@
+{
+  "name": "LLCore Icon Maker",
+  "mcversion": "1.8.0",
+  "version": "1.0.0",
+  "revision": "0001",
+  "author": "Mr. Spring",
+  "description": "A simple gui used to make icons used in LLCore."
+}
